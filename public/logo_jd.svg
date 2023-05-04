@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15.51">
+  <defs>
+    <style>
+      #logo_j {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="logo_j">
+    <path class="cls-1" d="m4.91,15.38c2.7-.47,4.2-2.24,4.2-5.32V0h-4.12"/>
+    <circle class="cls-1" cx="1.81" cy="13.7" r="1.81"/>
+    <path class="cls-1" d="m11.52,0h5.43c4.6,0,8.05,3.34,8.05,7.74s-3.45,7.77-8.05,7.77h-5.43V0Zm5.27,12.67c2.87,0,5-2.09,5-4.93s-2.13-4.93-5-4.93h-2.07v9.86h2.07Z"/>
+  </g>
+</svg>
