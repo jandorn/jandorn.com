@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Links from "../components/Links.astro";
+import Socials from "../components/Socials.astro";
 import ThemeChanger from "../components/ThemeChanger.astro";
 import "../layouts/Layout.astro"
 ---
 
 <Layout title="Jan Dorn">
-	<div class="flex flex-col items-center justify-center h-full pb-[8em]">
+	<div class="flex flex-col items-center justify-center h-full pb-[8em] space-y-6">
     <div class="relative">
       <p class="absolute top-[-.75em] right-[-1.5em]">
         <ThemeChanger />
@@ -14,5 +15,6 @@ import "../layouts/Layout.astro"
       <img class="h-11" src="jandorn.svg" alt="Logo Jan Dorn">
     </div>
 		<Links />
+    <Socials />
 	</div>
 </Layout>
