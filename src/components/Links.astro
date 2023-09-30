@@ -2,17 +2,16 @@
 import { Icon } from "astro-icon";
 ---
 
-<ul class="links text-lg mt-4 flex items-center">
-  <li><a href="/blog">blog</a></li>
-  <li class="flex items-center"><div class="h-8 w-8"><Icon name="circle-small" /></div></li>
-  <li><a href="/about">about</a></li>
-  <li class="flex items-center"><div class="h-8 w-8"><Icon name="circle-small" /></div></li>
-  <li><a href="/work">work</a></li>
+<ul class="links text-xl font-medium flex items-center justify-between shrink-0 w-full">
+  <li><a href="/blog">.blog</a></li>
+  <li><a href="/about">.about</a></li>
+  <li><a href="/work">.work</a></li>
 </ul>
 
 <style>
 .links a {
   position: relative;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .links a::after {
