@@ -13,37 +13,21 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+		<link rel="stylesheet" href="/src/styles/global.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="items-center justify-center p-0 m-0 bg-light dark:bg-dark w-full h-full min-h-screen border-[1em] border-accent flex flex-col">
-  		<slot />
+		<div class="items-center justify-center p-0 m-0 bg-light dark:bg-dark w-full h-full min-h-screen border-[1em] border-primary flex flex-col">
+			<slot />
 		</div>
 	</body>
 </html>
 
 <script>
-	const theme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
+
 </script>
 
 <style is:global>
-:root {
-	--accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-}
-html {
-	font-family: system-ui, sans-serif;
-	background-color: #F0F0F0;
-	color: #52647A;
-}
-code {
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
-}
+
 </style>
