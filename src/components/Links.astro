@@ -1,31 +1,8 @@
 ---
-import { Icon } from "astro-icon";
+
 ---
 
-<ul class="links text-xl font-medium flex items-center justify-between shrink-0 w-full">
-  <li><a href="/blog">.blog</a></li>
-  <li><a href="/about">.about</a></li>
-  <li><a href="/work">.work</a></li>
-</ul>
-
-<style>
-.links a {
-  position: relative;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-.links a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.links a:hover::after {
-  width: 100%;
-}
-</style>
+<p class="text-stone-400 hover:text-black"><a href="/">home</a></p>
+<p class="text-stone-400 hover:text-black"><a href="/blog">blog</a></p>
+<p class="text-stone-400 hover:text-black"><a href="/about">about</a></p>
+<p class="text-stone-400 hover:text-black"><a href="/work">work</a></div>
