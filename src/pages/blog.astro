@@ -1,14 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Links from "../components/Links.astro";
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const title = 'blog';
 ---
 
-<Layout title="blog">
-	<div class="grid grid-cols-5 w-full mt-[8rem]">
+<Layout title={title}>
+	<div class="grid grid-cols-5 w-full mt-[6rem]">
 
     <!-- logo + links (1/5) -->
     <div class="col-span-1 flex flex-col space-y-8 items-center mx-20">
-      <img class="w-4" src="logo_j.svg" alt="jandorn.com logo">
+      <img class="w-4" src="../logo_j.svg" alt="j logo">
       <div class="flex flex-col items-end">
         <Links />
       </div>
@@ -16,7 +19,10 @@ import Links from "../components/Links.astro";
 
     <!-- blog articles list (4/5) -->
     <div class="col-span-4">
-      <div class="text-4xl -mt-2">blog</div>
+      <div class="text-4xl -mt-2 mb-6">blog</div>
+      <div>
+        {allPosts.map((post) => <div class="mb-2"><a class="font-medium hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a></div> )}
+      </div>
     </div>
   </div>
 </Layout>
