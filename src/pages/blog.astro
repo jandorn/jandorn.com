@@ -19,7 +19,7 @@ const title = 'blog';
 
     <!-- blog articles list (4/5) -->
     <div class="col-span-4">
-      <div class="text-4xl -mt-2 mb-7">blog</div>
+      <div class="text-4xl -mt-2 mb-7">{title}</div>
       <div>
         {allPosts.map((post) => {
           const date = new Date(post.frontmatter.pubDate);
