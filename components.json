@@ -1,14 +1,13 @@
 {
-  "$schema": "https://ui.shadcn.com/schema.json",
   "style": "default",
-  "rsc": false,
-  "tsx": true,
+  "typescript": true,
   "tailwind": {
     "config": "tailwind.config.cjs",
     "css": "./src/styles/global.css",
-    "baseColor": "stone",
+    "baseColor": "slate",
     "cssVariables": true
   },
+  "framework": "astro",
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils"
