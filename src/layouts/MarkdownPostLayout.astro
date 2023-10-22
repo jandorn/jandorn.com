@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
 	<div class="flex w-full">
 
     <!-- nav -->
-    <div class="hidden sm:flex flex-shrink-0 w-24 flex-col space-y-[46px] items-center mx-20">
+    <div class="hidden md:flex flex-shrink-0 w-24 flex-col space-y-[46px] items-center mx-20">
       <img class="w-16" src="../../logo_j.svg" alt="j logo">
       <div class="flex flex-col items-end">
         <Links />
@@ -17,7 +17,7 @@ const { frontmatter } = Astro.props;
     </div>
 
     <!-- main -->
-    <div class="flex-grow px-8 sm:px-0 mt-[4.7rem]">
+    <div class="flex-grow px-8 md:pl-0 md:pr-8 mt-[4.7rem] mb-8">
       <div class="text-3xl mb-[2.8rem]">{ frontmatter.title }</div>
       <article class="prose-sm sm:prose">
         <slot />
