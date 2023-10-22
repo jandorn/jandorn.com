@@ -1,43 +1,32 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Links from "@/components/Links.astro";
+import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
 
 const allPosts = await Astro.glob('../pages/blog/*.md');
 const title = 'blog';
 ---
 
-<Layout title={title}>
-	<div class="grid grid-cols-5 w-full mt-[6rem]">
+<LayoutWithLinks title={title}>
+    
+    <div>
+      {allPosts.map((post) => {
+        const date = new Date(post.frontmatter.pubDate);
+        const month = date.toLocaleString('en-US', { month: 'short' });
+        const year = `'${date.getFullYear().toString().substr(-2)}`;
 
-    <!-- logo + links (1/5) -->
-    <div class="col-span-1 flex flex-col space-y-8 items-center mx-20">
-      <img class="w-4" src="../logo_j.svg" alt="j logo">
-      <div class="flex flex-col items-end">
-        <Links />
-      </div>
-    </div>
-
-    <!-- blog articles list (4/5) -->
-    <div class="col-span-4">
-      <div class="text-4xl -mt-2 mb-7">{title}</div>
-      <div>
-        {allPosts.map((post) => {
-          const date = new Date(post.frontmatter.pubDate);
-          const month = date.toLocaleString('en-US', { month: 'short' });
-          const year = `'${date.getFullYear().toString().substr(-2)}`;
-
-          return (
-              <div class="mb-2">
-                  <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
-                  <div class="flex space-x-1 text-xs text-gray-700">
-                    <p>{`${month} ${year}`}</p>
-                    <p>•</p>
-                    <p>123 views</p>
-                </div>
+        return (
+            <div class="mb-2">
+                <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
+                <div class="flex space-x-1 text-xs text-gray-700">
+                  <p>{`${month} ${year}`}</p>
+                  <p>•</p>
+                  <p>123 views</p>
               </div>
-          );
-        })}
-      </div>
+            </div>
+        );
+      })}
     </div>
   </div>
-</Layout>
+  
+</LayoutWithLinks>
