@@ -7,7 +7,7 @@ const isActive = (path) => {
 }
 ---
 
-<p class={`text-stone-400 ${isActive('/') ? 'text-black' : ''} hover:text-black`}><a href="/">home</a></p>
-<p class={`text-stone-400 ${isActive('/blog') ? 'text-black' : ''} hover:text-black`}><a href="/blog">blog</a></p>
-<p class={`text-stone-400 ${isActive('/about') ? 'text-black' : ''} hover:text-black`}><a href="/about">about</a></p>
-<p class={`text-stone-400 ${isActive('/work') ? 'text-black' : ''} hover:text-black`}><a href="/work">work</a></p>
+<p class={`${isActive('/') ? 'text-black' : 'text-stone-400'} hover:text-black`}><a href="/">home</a></p>
+<p class={`${isActive('/blog') ? 'text-black' : 'text-stone-400'} hover:text-black`}><a href="/blog">blog</a></p>
+<p class={`${isActive('/about') ? 'text-black' : 'text-stone-400'} hover:text-black`}><a href="/about">about</a></p>
+<p class={`${isActive('/work') ? 'text-black' : 'text-stone-400'} hover:text-black`}><a href="/work">work</a></p>
