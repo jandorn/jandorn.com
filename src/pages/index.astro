@@ -40,10 +40,11 @@ const title = "Jan Dorn";
 <script>
   import { gsap } from "gsap";
 
+  gsap.set(".dot", { transformOrigin: "50% 50%" });
+
   gsap.from(".dot", {
     duration: 1,
     y: -15,
-    transformOrigin: "50% 50%",
     scaleX: 0,
     scaleY: 0,
     ease: "bounce.out"
