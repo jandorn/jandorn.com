@@ -7,24 +7,24 @@ const title = 'blog';
 
 <LayoutWithLinks title={title}>
     
-    <div>
-      {allPosts.map((post) => {
+  <div>
+    {allPosts
+      .sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime())
+      .map((post) => {
         const date = new Date(post.frontmatter.pubDate);
         const month = date.toLocaleString('en-US', { month: 'short' });
         const year = `'${date.getFullYear().toString().substr(-2)}`;
-
+  
         return (
-            <div class="mb-2">
-                <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
-                <div class="flex space-x-1 text-xs text-gray-700">
-                  <p>{`${month} ${year}`}</p>
-                  <p>•</p>
-                  <p>123 views</p>
-              </div>
+          <div class="mb-2">
+            <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
+            <div class="flex space-x-2 text-xs text-gray-700">
+              <p>{`${month} ${year}`}</p>
+              {post.frontmatter.essay ? <div class="bg-slate-100 px-1 rounded">essay</div> : null}
             </div>
+          </div>
         );
       })}
-    </div>
   </div>
   
 </LayoutWithLinks>
