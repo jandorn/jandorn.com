@@ -8,6 +8,7 @@ image:
   url: 'https://docs.astro.build/assets/rays.webp'
   alt: 'Thumbnail of Astro rays.'
 tags: ['astro', 'learning in public', 'setbacks', 'community']
+essay: true
 ---
 
 ---
