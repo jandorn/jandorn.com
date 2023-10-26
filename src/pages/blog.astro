@@ -20,7 +20,7 @@ const title = 'blog';
             <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
             <div class="flex space-x-2 text-xs text-gray-700">
               <p>{`${month} ${year}`}</p>
-              {post.frontmatter.essay ? <div class="bg-slate-100 px-1 rounded">essay</div> : null}
+              {post.frontmatter.essay ? <div class="font-medium">essay</div> : null}
             </div>
           </div>
         );
