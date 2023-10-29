@@ -1,9 +1,107 @@
 ---
 import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+
 const title = 'work';
 ---
 
 <LayoutWithLinks title={title}>
-	
+  <div class="max-w-prose">
+    <article class="prose mb-4">
+      A collecition of projects I have worked on in the past or am currently working on.
+      
+    </article>
+    <div class="flex flex-wrap gap-4">
+      <Card class="w-full">
+        <CardContent class="flex items-center justify-center px-8 h-40 overflow-hidden">
+          <img class="w-full object-cover rounded-t-lg" src="../../jandorn.svg" alt="cover picture for energyleaf.de">
+        </CardContent>
+        <CardHeader>
+          <CardTitle>
+            Personal Website 🧑🏻‍💻
+          </CardTitle>
+          <CardDescription>
+            <a class="hover:underline" href="https://jandorn.com/" target="_blank">jandorn.com</a>
+            •
+            '23
+            •
+            <a class="hover:underline" href="https://github.com/jandorn/jandorn.com" target="_blank">github</a>
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          I built this personal website using the Astro framework. It is where I share my thoughts, my work and projects.
+          Check out the github repository for more information.
+        </CardContent>
+        <CardFooter class="space-x-1">
+          <Badge>Astro</Badge>
+        </CardFooter>
+      </Card>
+      <Card class="card-width">
+        <CardContent class="p-0 h-40 overflow-hidden">
+          <img class="w-full h-full object-cover rounded-t-lg" src="../../cover-energyleaf.png" alt="cover picture for energyleaf.de">
+        </CardContent>
+        <CardHeader>
+          <CardTitle>
+            Energyleaf 🍃
+          </CardTitle>
+          <CardDescription>
+            <a class="hover:underline" href="https://energyleaf.de/" target="_blank">energyleaf.de</a>
+            •
+            '21 - '23
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          A web application that allows users to track and analyze their energy consumption. <br><br>
+          I helped build the system from building the sensor to building the web application and the infrastructure. <br><br>
+          Also, my <a class="text-muted-foreground hover:underline" href="https://jandorn.github.io/bachelor-thesis/bachelor-thesis.pdf" target="_blank">bachelor thesis</a> is about the development of a recommender system for this application.
+        </CardContent>
+        <CardFooter class="space-x-1">
+          <Badge>Vue.js</Badge>
+          <Badge>Flask</Badge>
+          <Badge>MySQL</Badge>
+        </CardFooter>
+      </Card>
+      <Card class="card-width">
+        <CardContent class="p-0 h-40 overflow-hidden">
+          <img class="w-full h-full object-cover rounded-t-lg" src="../../cover-taxonomy.png" alt="cover picture for energyleaf.de">
+        </CardContent>
+        <CardHeader>
+          <CardTitle>
+            Taxonomy 📒
+          </CardTitle>
+          <CardDescription>
+            <a class="hover:underline" href="https://hop.fzi.de/taxonomy" target="_blank">hop.fzi.de/taxonomy</a>
+            •
+            '22
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          A web application that allows the user to classify their involvement projects by answering a series of questions. <br><br>
+          I have built this system during an internship at the the <a class="text-muted-foreground hover:underline" href="https://fzi.de">FZI</a> in Berlin.
+        </CardContent>
+        <CardFooter class="space-x-1">
+          <Badge>Vue.js</Badge>
+          <Badge>FastAPI</Badge>
+          <Badge>MongoDB</Badge>
+        </CardFooter>
+      </Card>
+    </div>
+  </div>
 </LayoutWithLinks>
+
+<style>
+  @media (min-width: 1024px) {
+    .card-width {
+      width: calc(50% - 0.5rem);
+    }
+  }
+</style>
