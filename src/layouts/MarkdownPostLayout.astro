@@ -3,6 +3,27 @@ import Layout from "./Layout.astro";
 import Links from "../components/Links.astro";
 
 const { frontmatter } = Astro.props;
+
+function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const date = new Date(dateString);
+    const formattedDate = date.toLocaleDateString(undefined, options);
+
+    const today = new Date();
+    const differenceInTime = today.getTime() - date.getTime();
+    const differenceInDays = Math.round(differenceInTime / (1000 * 3600 * 24));
+
+    let agoText = '';
+    if (differenceInDays === 0) {
+      agoText = 'today';
+    } else if (differenceInDays === 1) {
+      agoText = '(1d ago)';
+    } else {
+      agoText = `(${differenceInDays}d ago)`;
+    }
+
+    return `${formattedDate} ${agoText}`;
+  }
 ---
 
 <Layout title="blog">
@@ -17,8 +38,9 @@ const { frontmatter } = Astro.props;
     </div>
 
     <!-- main -->
-    <div class="flex-grow px-6 md:pl-0 md:pr-8 mt-[4.7rem] mb-8">
-      <div class="text-3xl mb-[2.8rem]">{ frontmatter.title }</div>
+    <div class="flex-grow px-6 md:pl-0 md:pr-8 mt-[5.1rem] mb-8">
+      <div class="text-2xl mb-1">{ frontmatter.title }</div>
+      <div class="text-sm font-light text-muted-foreground mb-[1rem]">{ formatDate(frontmatter.pubDate) }</div>
       <article class="prose dark:prose-invert">
         <slot />
       </article>
