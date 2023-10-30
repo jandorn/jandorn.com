@@ -4,10 +4,6 @@ title: 'Test Blog Post'
 pubDate: 2023-09-16
 description: 'This is a test blog post'
 author: Jan Dorn
-image:
-  url: 'https://docs.astro.build/assets/rays.webp'
-  alt: 'Thumbnail of Astro rays.'
-tags: ['astro', 'learning in public', 'setbacks', 'community']
 essay: false
 ---
 
