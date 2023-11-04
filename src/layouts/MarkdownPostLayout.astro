@@ -11,11 +11,11 @@ function formatDate(dateString) {
 
     const today = new Date();
     const differenceInTime = today.getTime() - date.getTime();
-    const differenceInDays = Math.round(differenceInTime / (1000 * 3600 * 24));
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
 
     let agoText = '';
     if (differenceInDays === 0) {
-      agoText = 'today';
+      agoText = '(today)';
     } else if (differenceInDays === 1) {
       agoText = '(1d ago)';
     } else {
