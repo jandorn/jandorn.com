@@ -27,7 +27,12 @@ function formatDate(dateString: string): string {
 ---
 
 <Layout title="blog">
-	<div class="flex w-full">
+	<div class="relative flex w-full">
+
+    <!-- mobile logo (only visible on small screens) -->
+    <div class="md:hidden absolute top-[2rem] left-1/2 transform -translate-x-1/2">
+      <a href="/"><img class="w-3" src="../logo_j.svg" alt="j logo"></a>
+    </div>
 
     <!-- nav -->
     <div class="hidden md:flex flex-shrink-0 w-24 flex-col space-y-[46px] items-center mx-20">
