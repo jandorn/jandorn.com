@@ -4,26 +4,26 @@ import Links from "../components/Links.astro";
 
 const { frontmatter } = Astro.props;
 
-function formatDate(dateString) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    const date = new Date(dateString);
-    const formattedDate = date.toLocaleDateString(undefined, options);
+function formatDate(dateString: string): string {
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+  const date = new Date(dateString);
+  const formattedDate = date.toLocaleDateString(undefined, options);
 
-    const today = new Date();
-    const differenceInTime = today.getTime() - date.getTime();
-    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
+  const today = new Date();
+  const differenceInTime = today.getTime() - date.getTime();
+  const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
 
-    let agoText = '';
-    if (differenceInDays === 0) {
-      agoText = '(today)';
-    } else if (differenceInDays === 1) {
-      agoText = '(1d ago)';
-    } else {
-      agoText = `(${differenceInDays}d ago)`;
-    }
-
-    return `${formattedDate} ${agoText}`;
+  let agoText = '';
+  if (differenceInDays === 0) {
+    agoText = '(today)';
+  } else if (differenceInDays === 1) {
+    agoText = '(1d ago)';
+  } else {
+    agoText = `(${differenceInDays}d ago)`;
   }
+
+  return `${formattedDate} ${agoText}`;
+}
 ---
 
 <Layout title="blog">
