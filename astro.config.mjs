@@ -1,16 +1,13 @@
 import { defineConfig } from 'astro/config';
-import react from "@astrojs/react";
 import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    react(),
-    vue()
-  ]
+  site: 'https://jandorn.com',
+  integrations: [tailwind({
+    applyBaseStyles: false
+  }), vue(), sitemap()]
 });
