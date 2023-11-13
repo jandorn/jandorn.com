@@ -7,6 +7,9 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jandorn.com',
+  prefetch: {
+    prefetchAll: true
+  },
   integrations: [tailwind({
     applyBaseStyles: false
   }), vue(), sitemap()]
