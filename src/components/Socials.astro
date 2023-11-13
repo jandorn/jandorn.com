@@ -1,10 +1,14 @@
 ---
-import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import github from "../icons/github-logo.svg";
+import x from "../icons/x-logo.svg";
+import linkedin from "../icons/linkedin-logo.svg"
+import email from "../icons/email-logo.svg"
 ---
 
 <ul class="flex justify-between w-full">
-  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://github.com/jandorn/" target="_blank"><Icon name="mdi:github" /></a></li>
-  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://twitter.com/ja_dorn" target="_blank"><Icon name="mdi:twitter" /></a></li>
-  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://www.linkedin.com/in/jandorn/" target="_blank"><Icon name="mdi:linkedin" /></a></li>
-  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="mailto:ja.dorn@web.de"><Icon name="mdi:email" /></a></li>
+  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://github.com/jandorn/" target="_blank"><Image src={github} alt="github link" /></a></li>
+  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://twitter.com/ja_dorn" target="_blank"><Image src={x} alt="x link" /></a></li>
+  <li class="w-[1.2rem] sm:w-[1.1rem]"><a href="https://www.linkedin.com/in/jandorn/" target="_blank"><Image src={linkedin} alt="linkedin link" /></a></li>
+  <li class="w-[1.5rem] sm:w-[1.3rem]"><a href="mailto:ja.dorn@web.de"><Image src={email} alt="email link" /></a></li>
 </ul>
