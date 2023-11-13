@@ -7,12 +7,14 @@ import jLogo from "../images/logo_j.svg";
 
 export interface Props {
 	title: string;
+  description: string;
 }
 
 const { title } = Astro.props;
+const { description } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
   <div class="flex flex-col w-full sm:mt-[6rem] mt-[2rem] sm:flex-row">
 
     <!-- mobile logo (only visible on small screens) -->

@@ -3,9 +3,10 @@ import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
 
 const allPosts = await Astro.glob('../pages/blog/*.md');
 const title = 'blog';
+const description = 'A collection of thoughts, essays, work and fun projects.';
 ---
 
-<LayoutWithLinks title={title}>
+<LayoutWithLinks title={title} description={description}>
     
   <div>
     {allPosts
