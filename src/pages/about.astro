@@ -1,8 +1,8 @@
 ---
 import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
 import Socials from "@/components/Socials.astro";
-
-const image = '../markdown/images/jan.jpg'
+import { Image } from "astro:assets";
+import headshot from "../images/jan.jpg"
 
 const title = 'about';
 ---
@@ -16,7 +16,7 @@ const title = 'about';
       Currently, I'm a graduade student in Business Informatics at the Karsruhe Institute of Technology in Germany.
     </p>
 
-    <img class="mx-auto rounded-full w-40" src="../../jan.jpg" alt="a picture of me">
+    <Image class="w-40 mx-auto rounded-full" src={headshot} alt="a picture of me" />
     <div class="mt-8 not-prose">
       <Socials />
     </div>
