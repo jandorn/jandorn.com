@@ -1,5 +1,9 @@
 ---
 import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
+import { Image } from "astro:assets";
+import jandorn from "../images/jandorn.svg";
+import energyleaf from "../images/cover-energyleaf.png";
+import taxonomy from "../images/cover-taxonomy.png";
 
 import {
   Card,
@@ -23,7 +27,7 @@ const title = 'work';
     <div class="flex flex-wrap gap-4">
       <Card class="card-width">
         <CardContent class="flex items-center justify-center px-8 h-40 overflow-hidden">
-          <img class="w-full object-cover rounded-t-lg" src="../../jandorn.svg" alt="cover picture for energyleaf.de">
+          <Image class="w-full object-cover rounded-t-lg" src={jandorn} alt="logo of jandorn.com" />
         </CardContent>
         <CardHeader class="">
           <CardTitle class="">
@@ -47,7 +51,7 @@ const title = 'work';
       </Card>
       <Card class="card-width">
         <CardContent class="p-0 h-40 overflow-hidden">
-          <img class="w-full h-full object-cover rounded-t-lg" src="../../cover-energyleaf.png" alt="cover picture for energyleaf.de">
+          <Image class="w-full h-full object-cover rounded-t-lg" src={energyleaf} alt="cover picture for energyleaf.de" />
         </CardContent>
         <CardHeader class="">
           <CardTitle class="">
@@ -72,7 +76,7 @@ const title = 'work';
       </Card>
       <Card class="card-width">
         <CardContent class="p-0 h-40 overflow-hidden">
-          <img class="w-full h-full object-cover rounded-t-lg" src="../../cover-taxonomy.png" alt="cover picture for energyleaf.de">
+          <Image class="w-full h-full object-cover rounded-t-lg" src={taxonomy} alt="cover picture for hop.fzi.de/taxonomy" />
         </CardContent>
         <CardHeader class="">
           <CardTitle class="">
