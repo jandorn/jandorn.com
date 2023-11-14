@@ -73,7 +73,7 @@ The first day was an exclusive trek through the rainforest. For about five hours
 
 ![Walk Through the Rainforest](../../images/blog/kilimanjaro/rainforest.jpg)
 
-Thankfully, the hike on the first day wasn't too challenging. I kept a good pace and managed quite well. By the time I reached Machame Camp at 2835 meters (9301 feet), the porters had already set up the tents, and Michael, our chef, was preparing dinner. Sitting down for a hot meal in the awning after that long day of hiking was nothing short of amazing.
+Thankfully, the hike on the first day wasn't too challenging. I kept a good pace and managed quite well. By the time I reached **Machame Camp** at 2835 meters (9301 feet), the porters had already set up the tents, and Michael, our chef, was preparing dinner. Sitting down for a hot meal in the awning after that long day of hiking was nothing short of amazing.
 
 One thing to note is how early the sun sets around here – by 6 PM, it's dark. This took a bit of getting used to, but it also meant our days started and ended early. A rhythm of early nights and early mornings quickly became the norm.
 
@@ -87,7 +87,7 @@ The landscape had transformed dramatically from the dense jungle of the previous
 
 ![View From the Moorland on Day 2](../../images/blog/kilimanjaro/moorland.jpg)
 
-By the time we reached the camp, once again the tent was already set up, and lunch was in the works. I used my brief downtime to catch up with friends and family back home.
+By the time we reached the camp (**Shira Cave Camp**), once again the tent was already set up, and lunch was in the works. I used my brief downtime to catch up with friends and family back home.
 
 And here's something that blew my mind – having mobile internet connection in the middle of the mountain! And not just any connection – it was surprisingly good. I could easily keep in touch with my family, even from the last camp at 4600 meters (15091 feet). It's wild, especially considering back home in Germany, you can lose signal just stepping out of a city center (okay, it's not that bad, but still!).
 
@@ -115,11 +115,11 @@ And then, there was the stomach pain. Sharp, growing pains that had me up at 3 A
 
 Let's just say the night was far from ideal, but I've had worse. Thanks to some Imodium, the stomach troubles were mostly at bay. So, we kicked off early again, right after breakfast, gearing up for what would be our longest day yet – a solid 8-hour climb.
 
-The Machame Route can be tackled in either 6 or 7 days. I went for the 6-day option, which meant skipping the Karanga Camp on the fourth day and heading straight for the final camp.
+The Machame Route can be tackled in either 6 or 7 days. I went for the 6-day option, which meant skipping **Karanga Camp** on the fourth day and heading straight for the final camp.
 
 ![Path to Barafu Camp](../../images/blog/kilimanjaro/path-to-barafu.jpg)
 
-And that’s exactly what we did. Starting at 3900 meters (12795 feet), we pushed on, climbing up to 4673 meters (15331 feet). By the afternoon, we had reached Barafu Camp – the last and highest camp. The day was long and exhausting, especially on the back of a sleep-deprived night. But surprisingly, the altitude didn’t hit me as hard this time. Maybe the acclimatisation was paying off – only a slight pressure in my head, but no headache, nausea, or other issues. A big relief!
+And that’s exactly what we did. Starting at 3900 meters (12795 feet), we pushed on, climbing up to 4673 meters (15331 feet). By the afternoon, we had reached **Barafu Camp** – the last and highest camp. The day was long and exhausting, especially on the back of a sleep-deprived night. But surprisingly, the altitude didn’t hit me as hard this time. Maybe the acclimatisation was paying off – only a slight pressure in my head, but no headache, nausea, or other issues. A big relief!
 
 The plan for the evening was simple: unwind, grab an early dinner, and try to catch some sleep before the midnight summit push. We aimed for at least three hours of rest before waking up at 11:30 PM.
 
