@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'What Does it Take to Climb Kilimanjaro?'
 pubDate: 2023-11-14
-description: "What It Takes to Climb Kilimanjaro? Explore a novice's ascent of Kilimanjaro: from preparation to the peak, experience the journey, challenges, and triumphs of climbing Africa's tallest mountain."
+description: "Explore a novice's ascent of Kilimanjaro: from preparation to the peak, experience the journey, challenges, and triumphs of climbing Africa's tallest mountain."
 author: Jan Dorn
 essay: false
 ---
