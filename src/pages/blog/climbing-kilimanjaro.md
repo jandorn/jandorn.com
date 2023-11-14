@@ -171,7 +171,7 @@ Having taken my triumphant photo at the summit sign, something inside me changed
 
 The descent to Barafu Camp was surprisingly swift. The path, covered in sand and dirt, allowed us to slide down – it almost felt like skiing. I practically ran down the mountain, feeling as light as if I had wings, despite the exhaustion.
 
-Once back at Barafu Camp, however, the tiredness hit me like a ton of bricks. Lamar advised against sleeping, cautioning that it might make me feel weaker, so I spent the time sitting in my chair, fighting to keep my eyes open. After an hour’s rest and repacking, we continued our descent to Mweka Camp, located at around 3100 meters (10170 feet). In total, we had descended nearly 3000 meters (9842 feet) since reaching the summit.
+Once back at Barafu Camp, however, the tiredness hit me like a ton of bricks. Lamar advised against sleeping, cautioning that it might make me feel weaker, so I spent the time sitting in my chair, fighting to keep my eyes open. After an hour’s rest and repacking, we continued our descent to **Mweka Camp**, located at around 3100 meters (10170 feet). In total, we had descended nearly 3000 meters (9842 feet) since reaching the summit.
 
 As we approached Mweka Camp, the landscape morphed back into dense jungle. It felt like I could see the oxygen particles floating in the air – breathing had never felt so good. The rich air worked wonders on my lingering headache, easing it for the first time in what felt like ages.
 
