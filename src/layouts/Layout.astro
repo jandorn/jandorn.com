@@ -1,6 +1,8 @@
 ---
 import "@/styles/global.css"
 
+import jandorn from "../images/jandorn.png"
+
 export interface Props {
 	title: string;
 	description: string;
@@ -20,6 +22,7 @@ import { ViewTransitions } from "astro:transitions";
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description}>
+		<meta name="thumbnail" content="/jandorn.png">
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
