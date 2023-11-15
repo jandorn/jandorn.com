@@ -1,12 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9.11 15.51">
-  <g id="favicon">
-    <path d="m4.91,15.38c2.7-.47,4.2-2.24,4.2-5.32V0h-4.12"/>
-    <circle cx="1.81" cy="13.7" r="1.81"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M12.085 23.7988C16.5306 23.0716 19.0004 20.3327 19.0004 15.5667V0H12.2167"/>
+  <path d="M6.98024 24C8.62618 24 9.96048 22.746 9.96048 21.1992C9.96048 19.6524 8.62618 18.3984 6.98024 18.3984C5.3343 18.3984 4 19.6524 4 21.1992C4 22.746 5.3343 24 6.98024 24Z"/>
   <style>
-    path, circle { fill: #000; }
+    path { fill: #000; }
     @media (prefers-color-scheme: dark) {
-        path, circle { fill: #FFF; }
+      path { fill: #FFF; }
     }
   </style>
 </svg>
