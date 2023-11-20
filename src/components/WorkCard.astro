@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  image?: ImageMetadata;
+  imageAlt?: string;
+  imageClass?: string;
+	title: string;
+  link: string;
+  linkText: string;
+  year: string;
+  github?: string;
+  description: string;
+  tech?: string[];
+}
+
+const { image, imageAlt, imageClass, title, link, linkText, year, github, description, tech = [] } = Astro.props;
+---
+
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+  {image && (
+    <div class="flex items-center justify-center h-40 overflow-hidden">
+      <Image src={ image } alt={ imageAlt } class={`object-cover rounded-t-lg ${imageClass ? imageClass : ''}`} />
+    </div>
+  )}
+  <div class="flex flex-col space-y-1.5 p-6">
+    <h3 class="text-2xl font-semibold leading-none tracking-tighter">
+      { title }
+    </h3>
+    
+    <p class="text-sm text-muted-foreground">
+      <a href={ link } class="hover:underline">{ linkText }</a>
+      •
+      { year }
+      {github && (
+        <>
+          •
+          <a href={ github } class="hover:underline">github</a>
+        </>
+      )
+
+      }
+    </p>
+  </div>
+  <div class="p-6 pt-0" set:html={description}></div>
+  <div class="p-6 pt-0 flex flex-wrap gap-2">
+    {tech.map((item) => (
+      <p class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">{item}</p>
+    ))}
+  </div>
+</div>
+
+<style>
+@media (min-width: 1024px) {
+  .card-width {
+    width: calc(50% - 0.5rem);
+  }
+}
+</style>
