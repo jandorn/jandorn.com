@@ -197,17 +197,17 @@ I speak from the perspective of a total novice in the world of high-altitude cli
 
 Through this lens, I learned that climbing Kilimanjaro isn't just a physical endeavor. It's a complex mix of preparation, mental fortitude, teamwork, adaptability, respect for nature and culture, and an emotional rollercoaster.
 
-1. **Preparation**: Success starts with proper preparation. Research extensively, understand what climbing the mountain involves, and determine whether to buy or rent equipment. Speak with those who've climbed before and assess your physical readiness.
+- **Preparation**: Success starts with proper preparation. Research extensively, understand what climbing the mountain involves, and determine whether to buy or rent equipment. Speak with those who've climbed before and assess your physical readiness.
 
-2. **Mental Strength**: Prepare for moments of mental strain. The climb will test your mental resilience as much as your physical stamina. Confronting the unknown, battling altitude sickness, and pushing through exhaustion requires a robust mindset.
+- **Mental Strength**: Prepare for moments of mental strain. The climb will test your mental resilience as much as your physical stamina. Confronting the unknown, battling altitude sickness, and pushing through exhaustion requires a robust mindset.
 
-3. **Teamwork and Dependence**: You can't climb Kilimanjaro solo. Relying on guides, porters, and fellow climbers is crucial. Their experience and support are invaluable, teaching you trust and the strength of unity.
+- **Teamwork and Dependence**: You can't climb Kilimanjaro solo. Relying on guides, porters, and fellow climbers is crucial. Their experience and support are invaluable, teaching you trust and the strength of unity.
 
-4. **Adaptability and Perseverance**: Be adaptable to changes in weather, altitude, and health. Perseverance in the face of adversity is key to reaching the summit.
+- **Adaptability and Perseverance**: Be adaptable to changes in weather, altitude, and health. Perseverance in the face of adversity is key to reaching the summit.
 
-5. **Respect for Nature and Culture**: The climb fosters a deep appreciation for nature's magnificence and the local Tanzanian culture. It's a chance to contribute to the local economy and understand the mountain's significance to the people.
+- **Respect for Nature and Culture**: The climb fosters a deep appreciation for nature's magnificence and the local Tanzanian culture. It's a chance to contribute to the local economy and understand the mountain's significance to the people.
 
-6. **Emotional Journey**: Beyond physicality, this is an emotional odyssey. It involves confronting fears, battling doubts, experiencing exhilaration, and emerging more self-aware.
+- **Emotional Journey**: Beyond physicality, this is an emotional odyssey. It involves confronting fears, battling doubts, experiencing exhilaration, and emerging more self-aware.
 
 For me, the Kilimanjaro was more than just a climb; it was a profound journey of self-discovery and personal growth, a testament to the power of human resilience and determination.
 
