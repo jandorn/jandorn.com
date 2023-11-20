@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 
 import sitemap from "@astrojs/sitemap";
@@ -9,5 +8,5 @@ export default defineConfig({
   site: 'https://jandorn.com',
   integrations: [tailwind({
     applyBaseStyles: false
-  }), vue(), sitemap()]
+  }), sitemap()]
 });
