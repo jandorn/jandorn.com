@@ -1,22 +1,55 @@
 ---
 import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
-import { Image } from "astro:assets";
+import WorkCard from "@/components/WorkCard.astro";
+
 import jandorn from "../images/jandorn.svg";
 import energyleaf from "../images/cover-energyleaf.png";
 import taxonomy from "../images/cover-taxonomy.png";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-
 const title = 'work';
 const description = 'A collecition of projects I have worked on in the past or am currently working on.';
+
+const projects = [
+  {
+    image: jandorn,
+    imageAlt: 'logo of jandorn.com',
+    imageClass: 'w-full px-8',
+    title: 'Personal Website 🧑🏻‍💻',
+    link: 'https://jandorn.com/',
+    linkText: 'jandorn.com',
+    year: '2023',
+    github: 'https://github.com/jandorn/jandorn.com',
+    description: `I built this personal website using the <a href="https://astro.build/" class="text-muted-foreground hover:underline" target="_blank">Astro</a> framework. 
+      It is where I share my thoughts, my work and projects. 
+      Check out the github repository.`,
+    tech: ['Astro'],
+  },
+  {
+    image: energyleaf,
+    imageAlt: 'cover picture for energyleaf.de',
+    imageClass: 'h-full',
+    title: 'Energyleaf 🍃',
+    link: 'https://energyleaf.de/',
+    linkText: 'energyleaf.de',
+    year: '2021 - 2023',
+    description: `This is a web application that allows users to track and analyze their energy consumption. <br><br>
+      I have built the system from building the sensors to building the web application and the infrastructure. <br><br>
+      Also, my <a class="text-muted-foreground hover:underline" href="https://jandorn.github.io/bachelor-thesis/bachelor-thesis.pdf" target="_blank">bachelor thesis</a> is about the development of a recommender system for this application.`,
+    tech: ['Vue.js', 'Flask', 'MySQL'],
+  },
+  {
+    image: taxonomy,
+    imageAlt: 'cover picture for hop.fzi.de/taxonomy',
+    imageClass: 'h-full',
+    title: 'Taxonomy 📒',
+    link: 'https://hop.fzi.de/taxonomy',
+    linkText: 'hop.fzi.de/taxonomy',
+    year: '2022',
+    description: `This is a web application that allows the user to classify an involvement project by answering a series of questions. <br><br>
+      I have built this system during an internship at the the <a class="text-muted-foreground hover:underline" href="https://fzi.de" target="_blank">FZI</a> in Berlin.`,
+    tech: ['Vue.js', 'FastAPI', 'MongoDB'],
+  }
+]
 ---
 
 <LayoutWithLinks title={title} description={description}>
@@ -24,88 +57,23 @@ const description = 'A collecition of projects I have worked on in the past or a
     <article class="prose mb-4">
       This is a collection of projects I have worked on in the past or am currently working on.
     </article>
-    <div class="flex flex-wrap gap-4">
-      <Card class="card-width">
-        <CardContent class="flex items-center justify-center px-8 h-40 overflow-hidden">
-          <Image class="w-full object-cover rounded-t-lg" src={jandorn} alt="logo of jandorn.com" />
-        </CardContent>
-        <CardHeader class="">
-          <CardTitle class="">
-            Personal Website 🧑🏻‍💻
-          </CardTitle>
-          <CardDescription class="">
-            <a class="hover:underline" href="https://jandorn.com/" target="_blank">jandorn.com</a>
-            •
-            '23
-            •
-            <a class="hover:underline" href="https://github.com/jandorn/jandorn.com" target="_blank">github</a>
-          </CardDescription>
-        </CardHeader>
-        <CardContent class="">
-          I built this personal website using the <a class="text-muted-foreground hover:underline" href="https://astro.build" target="_blank">Astro</a> framework. It is where I share my thoughts, my work and projects.
-          Check out the github repository.
-        </CardContent>
-        <CardFooter class="space-x-1">
-          <Badge>Astro</Badge>
-        </CardFooter>
-      </Card>
-      <Card class="card-width">
-        <CardContent class="p-0 h-40 overflow-hidden">
-          <Image class="w-full h-full object-cover rounded-t-lg" src={energyleaf} alt="cover picture for energyleaf.de" />
-        </CardContent>
-        <CardHeader class="">
-          <CardTitle class="">
-            Energyleaf 🍃
-          </CardTitle>
-          <CardDescription class="">
-            <a class="hover:underline" href="https://energyleaf.de/" target="_blank">energyleaf.de</a>
-            •
-            '21 - '23
-          </CardDescription>
-        </CardHeader>
-        <CardContent class="">
-          This is a web application that allows users to track and analyze their energy consumption. <br><br>
-          I have built the system from building the sensors to building the web application and the infrastructure. <br><br>
-          Also, my <a class="text-muted-foreground hover:underline" href="https://jandorn.github.io/bachelor-thesis/bachelor-thesis.pdf" target="_blank">bachelor thesis</a> is about the development of a recommender system for this application.
-        </CardContent>
-        <CardFooter class="space-x-1">
-          <Badge>Vue.js</Badge>
-          <Badge>Flask</Badge>
-          <Badge>MySQL</Badge>
-        </CardFooter>
-      </Card>
-      <Card class="card-width">
-        <CardContent class="p-0 h-40 overflow-hidden">
-          <Image class="w-full h-full object-cover rounded-t-lg" src={taxonomy} alt="cover picture for hop.fzi.de/taxonomy" />
-        </CardContent>
-        <CardHeader class="">
-          <CardTitle class="">
-            Taxonomy 📒
-          </CardTitle>
-          <CardDescription class="">
-            <a class="hover:underline" href="https://hop.fzi.de/taxonomy" target="_blank">hop.fzi.de/taxonomy</a>
-            •
-            '22
-          </CardDescription>
-        </CardHeader>
-        <CardContent class="">
-          This is a web application that allows the user to classify an involvement project by answering a series of questions. <br><br>
-          I have built this system during an internship at the the <a class="text-muted-foreground hover:underline" href="https://fzi.de" target="_blank">FZI</a> in Berlin.
-        </CardContent>
-        <CardFooter class="space-x-1">
-          <Badge>Vue.js</Badge>
-          <Badge>FastAPI</Badge>
-          <Badge>MongoDB</Badge>
-        </CardFooter>
-      </Card>
+    <div class="md:columns-2 md:gap-4 columns-1 gap-4">
+      {projects.map((project) => (
+        <div class="break-inside-avoid mb-4">
+          <WorkCard 
+            image={project.image}
+            imageAlt={project.imageAlt}
+            imageClass={project.imageClass}
+            link={project.link}
+            linkText={project.linkText}
+            year={project.year}
+            github={project.github}
+            title={project.title}
+            description={project.description}
+            tech={project.tech}
+          />
+        </div>
+      ))}
     </div>
   </div>
 </LayoutWithLinks>
-
-<style>
-  @media (min-width: 1024px) {
-    .card-width {
-      width: calc(50% - 0.5rem);
-    }
-  }
-</style>
