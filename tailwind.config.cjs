@@ -77,7 +77,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif', ...defaultTheme.fontFamily.sans],
+        sans: ['roboto', 'sans-serif', ...defaultTheme.fontFamily.sans],
       }
     },
   },
