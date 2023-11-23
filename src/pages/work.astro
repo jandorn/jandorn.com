@@ -6,74 +6,78 @@ import jandorn from "../images/jandorn.svg";
 import energyleaf from "../images/cover-energyleaf.png";
 import taxonomy from "../images/cover-taxonomy.png";
 
-const title = 'work';
-const description = 'A collecition of projects I have worked on in the past or am currently working on.';
+const title = "work";
+const description =
+  "A collecition of projects I have worked on in the past or am currently working on.";
 
 const projects = [
   {
     image: jandorn,
-    imageAlt: 'logo of jandorn.com',
-    imageClass: 'w-full px-8',
-    title: 'Personal Website 🧑🏻‍💻',
-    link: 'https://jandorn.com/',
-    linkText: 'jandorn.com',
-    year: '2023',
-    github: 'https://github.com/jandorn/jandorn.com',
+    imageAlt: "logo of jandorn.com",
+    imageClass: "w-full px-8",
+    title: "Personal Website 🧑🏻‍💻",
+    link: "https://jandorn.com/",
+    linkText: "jandorn.com",
+    year: "2023",
+    github: "https://github.com/jandorn/jandorn.com",
     description: `I built this personal website using the <a href="https://astro.build/" class="text-muted-foreground hover:underline" target="_blank">Astro</a> framework. 
       It is where I share my thoughts, my work and projects. 
       Check out the github repository.`,
-    tech: ['Astro'],
+    tech: ["Astro"],
   },
   {
     image: energyleaf,
-    imageAlt: 'cover picture for energyleaf.de',
-    imageClass: 'h-full',
-    title: 'Energyleaf 🍃',
-    link: 'https://energyleaf.de/',
-    linkText: 'energyleaf.de',
-    year: '2021 - 2023',
+    imageAlt: "cover picture for energyleaf.de",
+    imageClass: "h-full",
+    title: "Energyleaf 🍃",
+    link: "https://energyleaf.de/",
+    linkText: "energyleaf.de",
+    year: "2021 - 2023",
     description: `This is a web application that allows users to track and analyze their energy consumption. <br><br>
       I have built the system from building the sensors to building the web application and the infrastructure. <br><br>
       Also, my <a class="text-muted-foreground hover:underline" href="https://jandorn.github.io/bachelor-thesis/bachelor-thesis.pdf" target="_blank">bachelor thesis</a> is about the development of a recommender system for this application.`,
-    tech: ['Vue.js', 'Flask', 'MySQL'],
+    tech: ["Vue.js", "Flask", "MySQL"],
   },
   {
     image: taxonomy,
-    imageAlt: 'cover picture for hop.fzi.de/taxonomy',
-    imageClass: 'h-full',
-    title: 'Taxonomy 📒',
-    link: 'https://hop.fzi.de/taxonomy',
-    linkText: 'hop.fzi.de/taxonomy',
-    year: '2022',
+    imageAlt: "cover picture for hop.fzi.de/taxonomy",
+    imageClass: "h-full",
+    title: "Taxonomy 📒",
+    link: "https://hop.fzi.de/taxonomy",
+    linkText: "hop.fzi.de/taxonomy",
+    year: "2022",
     description: `This is a web application that allows the user to classify an involvement project by answering a series of questions. <br><br>
       I have built this system during an internship at the the <a class="text-muted-foreground hover:underline" href="https://fzi.de" target="_blank">FZI</a> in Berlin.`,
-    tech: ['Vue.js', 'FastAPI', 'MongoDB'],
-  }
-]
+    tech: ["Vue.js", "FastAPI", "MongoDB"],
+  },
+];
 ---
 
 <LayoutWithLinks title={title} description={description}>
   <div class="max-w-prose">
     <article class="prose mb-4">
-      This is a collection of projects I have worked on in the past or am currently working on.
+      This is a collection of projects I have worked on in the past or am
+      currently working on.
     </article>
     <div class="md:columns-2 md:gap-4 columns-1 gap-4">
-      {projects.map((project) => (
-        <div class="break-inside-avoid mb-4">
-          <WorkCard 
-            image={project.image}
-            imageAlt={project.imageAlt}
-            imageClass={project.imageClass}
-            link={project.link}
-            linkText={project.linkText}
-            year={project.year}
-            github={project.github}
-            title={project.title}
-            description={project.description}
-            tech={project.tech}
-          />
-        </div>
-      ))}
+      {
+        projects.map((project) => (
+          <div class="break-inside-avoid mb-4">
+            <WorkCard
+              image={project.image}
+              imageAlt={project.imageAlt}
+              imageClass={project.imageClass}
+              link={project.link}
+              linkText={project.linkText}
+              year={project.year}
+              github={project.github}
+              title={project.title}
+              description={project.description}
+              tech={project.tech}
+            />
+          </div>
+        ))
+      }
     </div>
   </div>
 </LayoutWithLinks>

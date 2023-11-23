@@ -8,24 +8,31 @@ import jLogo from "../images/logo_j.svg";
 const { frontmatter } = Astro.props;
 
 function formatDate(dateString: string): string {
-  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
   const date = new Date(dateString);
   const formattedDate = date.toLocaleDateString(undefined, options);
-  
+
   return `${formattedDate}`;
 }
 ---
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
-	<div class="relative flex w-full">
-
+  <div class="relative flex w-full">
     <!-- mobile logo (only visible on small screens) -->
-    <div class="md:hidden absolute top-[2rem] left-1/2 transform -translate-x-1/2">
+    <div
+      class="md:hidden absolute top-[2rem] left-1/2 transform -translate-x-1/2"
+    >
       <a href="/"><Image class="w-3" src={jLogo} alt="j logo" /></a>
     </div>
 
     <!-- nav -->
-    <div class="hidden md:flex flex-shrink-0 w-24 flex-col space-y-[46px] items-center mx-20">
+    <div
+      class="hidden md:flex flex-shrink-0 w-24 flex-col space-y-[46px] items-center mx-20"
+    >
       <Image class="w-16" src={jLogo} alt="j logo" />
       <div class="flex flex-col items-end">
         <Links />
@@ -34,9 +41,13 @@ function formatDate(dateString: string): string {
 
     <!-- main -->
     <div class="flex-grow px-6 md:pl-0 md:pr-8 mt-[5.1rem] mb-8">
-      <div class="text-2xl">{ frontmatter.title }</div>
-      <div class="text-sm font-light text-muted-foreground mb-[1.3rem]">{ formatDate(frontmatter.pubDate) }</div>
-      <article class="prose dark:prose-invert prose-img:rounded-lg">
+      <div class="text-2xl">{frontmatter.title}</div>
+      <div class="text-sm font-light text-muted-foreground mb-[1.3rem]">
+        {formatDate(frontmatter.pubDate)}
+      </div>
+      <article
+        class="prose dark:prose-invert prose-img:rounded-lg max-w-2xl text-justify"
+      >
         <slot />
       </article>
     </div>

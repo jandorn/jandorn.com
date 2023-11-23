@@ -1,12 +1,12 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import Links from '@/components/Links.astro'
-import { Image } from 'astro:assets';
+import Layout from "@/layouts/Layout.astro";
+import Links from "@/components/Links.astro";
+import { Image } from "astro:assets";
 
 import jLogo from "../images/logo_j.svg";
 
 export interface Props {
-	title: string;
+  title: string;
   description: string;
 }
 
@@ -16,14 +16,15 @@ const { description } = Astro.props;
 
 <Layout title={title} description={description}>
   <div class="flex flex-col w-full sm:mt-[6rem] mt-[2rem] sm:flex-row">
-
     <!-- mobile logo (only visible on small screens) -->
     <div class="sm:hidden flex justify-center mb-8">
       <a href="/"><Image class="w-3" src={jLogo} alt="j logo" /></a>
     </div>
 
     <!-- nav -->
-    <div class="hidden sm:flex flex-shrink-0 w-24 flex-col space-y-8 items-center mx-20">
+    <div
+      class="hidden sm:flex flex-shrink-0 w-24 flex-col space-y-8 items-center mx-20"
+    >
       <a href="/"><Image class="w-4" src={jLogo} alt="j logo" /></a>
       <div class="flex flex-col items-end">
         <Links />
