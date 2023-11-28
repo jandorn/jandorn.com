@@ -6,7 +6,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jandorn.com',
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), sitemap()]
+  integrations: [tailwind(), sitemap()]
 });
