@@ -1,5 +1,5 @@
 ---
-import "@/styles/global.css";
+// import "@/styles/global.css";
 import "@fontsource/roboto";
 
 export interface Props {
@@ -32,7 +32,7 @@ import { ViewTransitions } from "astro:transitions";
 	</head>
 	<body>
 		<div
-			class="box-border overflow-y-auto flex justify-center p-0 m-0 bg-light w-[calc(100vw - (100vw - 100%))] min-h-screen border-[1rem] border-primary font-sans text-lg"
+			class="box-border overflow-y-auto flex justify-center p-0 m-0 bg-background-light w-[calc(100vw - (100vw - 100%))] min-h-screen border-[1rem] border-border-light font-sans text-primary-light text-lg"
 		>
 			<slot />
 		</div>

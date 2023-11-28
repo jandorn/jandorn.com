@@ -28,7 +28,7 @@ const {
 } = Astro.props;
 ---
 
-<div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+<div class="rounded-lg border bg-card">
   {
     image && (
       <div class="flex items-center justify-center h-40 overflow-hidden">
@@ -41,11 +41,11 @@ const {
     )
   }
   <div class="flex flex-col space-y-1.5 p-6">
-    <h3 class="text-2xl font-semibold leading-none tracking-tighter">
+    <h3 class="text-2xl font-semibold leading-none tracking-tight">
       {title}
     </h3>
 
-    <p class="text-sm text-muted-foreground">
+    <p class="text-sm text-secondary-light">
       <a href={link} target="_blank" class="hover:underline">{linkText}</a>
        •
       {year}
@@ -61,11 +61,11 @@ const {
       }
     </p>
   </div>
-  <div class="p-6 pt-0 text-base" set:html={description} />
+  <div class="p-6 pt-0 text-base text-primary-light" set:html={description} />
   <div class="p-6 pt-0 flex flex-wrap gap-2">
     {
       tech.map((item) => (
-        <p class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-transparent bg-secondary">
+        <p class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-transparent bg-pill-light">
           {item}
         </p>
       ))
