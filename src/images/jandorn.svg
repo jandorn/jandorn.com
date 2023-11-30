@@ -2,7 +2,10 @@
 <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.85 17.55" width="114.85" height="17.55">
   <defs>
     <style>
-
+      path, circle { fill: #000; }
+      @media (prefers-color-scheme: dark) {
+        path, circle { fill: #FFF; }
+      }
     </style>
   </defs>
   <path class="j" d="m0,16.22l.9-3.24c.86.65,1.87,1.08,2.99,1.08,1.73,0,2.74-1.04,2.74-3.2V.58l3.74-.58v11.36c0,3.53-2.16,6.19-5.94,6.19-1.62,0-3.17-.5-4.43-1.33Z"/>
