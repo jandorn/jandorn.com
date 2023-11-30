@@ -3,22 +3,22 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: 'media',
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       colors: {
         background: {
-          light: '#FFFFFF',
+          light: '#F0F0F0',
           dark: '#110F0F',
         },
         primary: {
           light: '#110F0F',
-          dark: '#FFFFFF',
+          dark: '#F0F0F0',
         },
         secondary: {
           light: '#64748b',
-          dark: '#FFFFFF',
+          dark: '#91A0B5',
         },
         pill: {
           light: '#f1f5f9',
@@ -26,7 +26,7 @@ module.exports = {
         },
         border: {
           light: '#000000',
-          dark: '#FFFFFF',
+          dark: '#F0F0F0',
         },
       },
       typography: {
