@@ -20,7 +20,12 @@ const description =
         style="overflow: visible;"
       >
         <defs>
-          <style></style>
+          <style>
+            path, circle { fill: #000; }
+            @media (prefers-color-scheme: dark) {
+              path, circle { fill: #FFF; }
+            }
+          </style>
         </defs>
         <path
           class="j"
