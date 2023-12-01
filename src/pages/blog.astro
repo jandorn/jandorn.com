@@ -19,7 +19,7 @@ const description = 'A collection of thoughts, essays, work and fun projects.';
         return (
           <div class="mb-2">
             <a class="hover:underline underline-offset-4" href={post.url}>{post.frontmatter.title}</a>
-            <div class="flex space-x-2 text-xs text-gray-700">
+            <div class="flex space-x-2 text-xs text-gray-700 dark:text-gray-400">
               <p>{`${month} ${year}`}</p>
               {post.frontmatter.essay ? <div class="font-medium">essay</div> : null}
             </div>
