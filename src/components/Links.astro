@@ -7,15 +7,39 @@ const isActive = (path) => {
 };
 ---
 
-<p class={`${isActive("/") ? "text-black dark:text-white dark:underline dark:underline-offset-4" : "text-neutral-500 dark:text-white"} hover:text-black dark:hover:text-white dark:hover:underline underline-offset-4 text-xl sm:text-lg`}>
+<p
+  class={`${
+    isActive("/")
+      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
+      : "text-black dark:text-white"
+  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
+>
   <a href="/">home</a>
 </p>
-<p class={`${isActive("/blog") ? "text-black dark:text-white dark:underline dark:underline-offset-4" : "text-neutral-500 dark:text-white"} hover:text-black dark:hover:text-white dark:hover:underline underline-offset-4 text-xl sm:text-lg`}>
+<p
+  class={`${
+    isActive("/blog")
+      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
+      : "text-black dark:text-white"
+  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
+>
   <a href="/blog">blog</a>
 </p>
-<p class={`${isActive("/about") ? "text-black dark:text-white dark:underline dark:underline-offset-4" : "text-neutral-500 dark:text-white"} hover:text-black dark:hover:text-white dark:hover:underline underline-offset-4 text-xl sm:text-lg`}>
+<p
+  class={`${
+    isActive("/about")
+      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
+      : "text-black dark:text-white"
+  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
+>
   <a href="/about">about</a>
 </p>
-<p class={`${isActive("/work") ? "text-black dark:text-white dark:underline dark:underline-offset-4" : "text-neutral-500 dark:text-white"} hover:text-black dark:hover:text-white dark:hover:underline underline-offset-4 text-xl sm:text-lg`}>
+<p
+  class={`${
+    isActive("/work")
+      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
+      : "text-black dark:text-white"
+  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
+>
   <a href="/work">work</a>
 </p>
