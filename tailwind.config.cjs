@@ -21,7 +21,7 @@ module.exports = {
           dark: '#A8A8A8',
         },
         pill: {
-          light: '#f1f5f9',
+          light: '#E0E0E0',
           dark: '#575757',
         },
         border: {
