@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         background: {
           light: '#F0F0F0',
-          dark: '#110F0F',
+          dark: '#171717',
         },
         primary: {
           light: '#110F0F',
@@ -18,7 +18,7 @@ module.exports = {
         },
         secondary: {
           light: '#64748b',
-          dark: '#91A0B5',
+          dark: '#A8A8A8',
         },
         pill: {
           light: '#f1f5f9',
