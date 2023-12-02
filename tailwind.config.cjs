@@ -22,7 +22,7 @@ module.exports = {
         },
         pill: {
           light: '#f1f5f9',
-          dark: '#64748b',
+          dark: '#575757',
         },
         border: {
           light: '#000000',
