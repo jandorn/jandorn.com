@@ -27,19 +27,19 @@ const isActive = (path) => {
 </p>
 <p
   class={`${
-    isActive("/about")
-      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
-      : "text-black dark:text-white"
-  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
->
-  <a href="/about">about</a>
-</p>
-<p
-  class={`${
     isActive("/work")
       ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
       : "text-black dark:text-white"
   } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
 >
   <a href="/work">work</a>
+</p>
+<p
+  class={`${
+    isActive("/about")
+      ? "text-black dark:text-white underline underline-offset-4 dark:underline dark:underline-offset-4"
+      : "text-black dark:text-white"
+  } hover:underline dark:hover:underline underline-offset-4 text-xl sm:text-lg`}
+>
+  <a href="/about">about</a>
 </p>
