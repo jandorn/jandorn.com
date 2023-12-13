@@ -4,7 +4,7 @@
     <style>
       path, circle { fill: #000; }
       @media (prefers-color-scheme: dark) {
-        path, circle { fill: #FFF; }
+        path, circle { fill: #F0F0F0; }
       }
     </style>
   </defs>
