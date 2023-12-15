@@ -17,8 +17,8 @@ module.exports = {
           dark: '#F0F0F0',
         },
         secondary: {
-          light: '#64748b',
-          dark: '#A8A8A8',
+          light: '#7E828B',
+          dark: '#67686D',
         },
         pill: {
           light: '#E0E0E0',
@@ -31,6 +31,10 @@ module.exports = {
         hover: {
           light: '#6A6A6A',
           dark: '#B1B2B4',
+        },
+        divider: {
+          light: '#E6E7EB',
+          dark: '#242628',
         },
       },
       typography: {
