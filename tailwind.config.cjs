@@ -28,6 +28,10 @@ module.exports = {
           light: '#000000',
           dark: '#F0F0F0',
         },
+        hover: {
+          light: '#6A6A6A',
+          dark: '#B1B2B4',
+        },
       },
       typography: {
         quoteless: {
