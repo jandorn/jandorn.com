@@ -1,83 +1,99 @@
 ---
 import LayoutWithLinks from "@/layouts/LayoutWithLinks.astro";
-import WorkCard from "@/components/WorkCard.astro";
-
-import jandorn from "../images/jandorn.svg";
-import energyleaf from "../images/cover-energyleaf.png";
-import taxonomy from "../images/cover-taxonomy.png";
 
 const title = "work";
-const description =
-  "A collecition of projects I have worked on in the past or am currently working on.";
-
-const projects = [
-  {
-    image: jandorn,
-    imageAlt: "logo of jandorn.com",
-    imageClass: "w-full px-8",
-    title: "Personal Website 🧑🏻‍💻",
-    link: "https://jandorn.com/",
-    linkText: "jandorn.com",
-    year: "2023",
-    github: "https://github.com/jandorn/jandorn.com",
-    description: `I built this personal website using the <a href="https://astro.build/" class="text-secondary-light dark:text-secondary-dark hover:underline" target="_blank">Astro</a> framework. 
-      It is where I share my thoughts, my work and projects. 
-      Check out the github repository.`,
-    tech: ["Astro"],
-  },
-  {
-    image: energyleaf,
-    imageAlt: "cover picture for energyleaf.de",
-    imageClass: "h-full",
-    title: "Energyleaf 🍃",
-    link: "https://energyleaf.de/",
-    linkText: "energyleaf.de",
-    year: "2021 - 2023",
-    description: `This is a web application that allows users to track and analyze their energy consumption. <br><br>
-      I have built the system from building the sensors to building the web application and the infrastructure. <br><br>
-      Also, my <a class="text-secondary-light dark:text-secondary-dark hover:underline" href="https://jandorn.github.io/bachelor-thesis/bachelor-thesis.pdf" target="_blank">bachelor thesis</a> is about the development of a recommender system for this application.`,
-    tech: ["Vue.js", "Flask", "MySQL"],
-  },
-  {
-    image: taxonomy,
-    imageAlt: "cover picture for hop.fzi.de/taxonomy",
-    imageClass: "h-full",
-    title: "Taxonomy 📒",
-    link: "https://hop.fzi.de/taxonomy",
-    linkText: "hop.fzi.de/taxonomy",
-    year: "2022",
-    description: `This is a web application that allows the user to classify an involvement project by answering a series of questions. <br><br>
-      I have built this system during an internship at the the <a class="text-secondary-light dark:text-secondary-dark hover:underline" href="https://fzi.de" target="_blank">FZI</a> in Berlin.`,
-    tech: ["Vue.js", "FastAPI", "MongoDB"],
-  },
-];
+const description = "A collecition of projects I have worked on in the past or am currently working on.";
 ---
 
 <LayoutWithLinks title={title} description={description}>
-  <div class="max-w-prose">
-    <article class="prose text-primary-light dark:text-primary-dark mb-4">
-      This is a collection of projects I have worked on in the past or am
-      currently working on.
-    </article>
-    <div class="md:columns-2 md:gap-4 columns-1 gap-4">
-      {
-        projects.map((project) => (
-          <div class="break-inside-avoid mb-4">
-            <WorkCard
-              image={project.image}
-              imageAlt={project.imageAlt}
-              imageClass={project.imageClass}
-              link={project.link}
-              linkText={project.linkText}
-              year={project.year}
-              github={project.github}
-              title={project.title}
-              description={project.description}
-              tech={project.tech}
-            />
-          </div>
-        ))
-      }
+  <div class="max-w-prose flex flex-col space-y-16">
+    <div class="space-y-8">
+      <p>projects that I created or that I am currently working on</p>
+      <div class="flex flex-col space-y-2 divide-divider-light dark:divide-divider-dark">
+        <div class="relative hover:text-hover-light dark:hover:text-hover-dark">
+          <a href="https://github.com/jandorn/jandorn.com/" class="flex justify-between tooltip-link">
+            <span>Personal Website</span>
+            <span class="text-secondary-light dark:text-secondary-dark">creator</span>
+          </a>
+        </div>
+        <div class="tooltip hidden absolute text-sm py-2 px-3 bg-white text-[#67686D] rounded shadow w-64 opacity-95">
+          <p class="mb-2">
+            Built my personal website in the end of 2023. First time I came in contact with Astro and I'm loving it since.
+          </p>
+          <span class="text-xs flex flex-wrap gap-2">
+            <p>Astro</p>
+          </span>
+        </div>
+        <hr>
+        <div class="relative hover:text-hover-light dark:hover:text-hover-dark">
+          <a href="https://energyleaf.de/" class="flex justify-between tooltip-link">
+            <span>Energyleaf</span>
+            <span class="text-secondary-light dark:text-secondary-dark">creator</span>
+          </a>
+        </div>
+        <div class="tooltip hidden absolute text-sm py-2 px-3 bg-white text-[#67686D] rounded shadow w-64 opacity-95">
+          <p class="mb-2">
+            This project entailed building building and installing sensors in private households to measure the energy consumption over time.
+            The data was then analyzed and visualized in a web app.
+            I also wrote my bachelor thesis about this project.
+          </p>
+          <span class="text-xs flex flex-wrap gap-2">
+            <p>Vue</p>
+            <p>Flask</p>
+            <p>MySQL</p>
+          </span>
+        </div>
+        <hr>
+        <div class="relative hover:text-hover-light dark:hover:text-hover-dark">
+          <a href="https://hop.fzi.de/taxonomy/" class="flex justify-between tooltip-link">
+            <span>Taxonomy</span>
+            <span class="text-secondary-light dark:text-secondary-dark">creator</span>
+          </a>
+        </div>
+        <div class="tooltip hidden absolute text-sm py-2 px-3 bg-white text-[#67686D] rounded shadow w-64 opacity-95">
+          <p class="mb-2">
+            During my internship at the FZI as a software developer,
+            I created a web app to help create and visualize the taxonomy of an internal research project.
+          </p>
+          <span class="text-xs flex flex-wrap gap-3">
+            <p>Vue</p>
+            <p>FastAPI</p>
+            <p>MongoDB</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="space-y-2">
+      <h3 class="font-bold">Micros</h3>
+      <p>Fun and interesting little projects. Not necessarily useful.</p>
     </div>
   </div>
 </LayoutWithLinks>
+
+<script>
+  const tooltipLinks = document.querySelectorAll('.tooltip-link');
+  const tooltipWidth = 256; //half of the tailwind width w-64
+
+  tooltipLinks.forEach((link, index) => {
+    const tooltip = document.getElementsByClassName('tooltip')[index]; // Hole den jeweiligen Tooltip
+
+    link.addEventListener('mousemove', (e) => {
+      tooltip.classList.remove('hidden');
+      tooltip.style.visibility = 'hidden';
+
+      const tooltipHeight = tooltip.offsetHeight;
+
+      const x = e.pageX - tooltipWidth / 2;
+      const y = e.pageY - tooltipHeight - 20;
+
+      tooltip.style.left = `${x}px`;
+      tooltip.style.top = `${y}px`;
+
+      tooltip.style.visibility = 'visible';
+    });
+
+    link.addEventListener('mouseleave', () => {
+      tooltip.classList.add('hidden');
+    });
+  });
+</script>
