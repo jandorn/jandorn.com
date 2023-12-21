@@ -75,9 +75,9 @@ const description = "A collecition of projects I have worked on in the past or a
   const tooltipWidth = 256; //half of the tailwind width w-64
 
   tooltipLinks.forEach((link, index) => {
-    const tooltip = document.getElementsByClassName('tooltip')[index]; // Hole den jeweiligen Tooltip
+    const tooltip = document.getElementsByClassName('tooltip')[index] as HTMLElement; // Hole den jeweiligen Tooltip
 
-    link.addEventListener('mousemove', (e) => {
+    link.addEventListener('mousemove', (e: MouseEvent) => {
       tooltip.classList.remove('hidden');
       tooltip.style.visibility = 'hidden';
 
