@@ -70,30 +70,36 @@ const description = "A collecition of projects I have worked on in the past or a
   </div>
 </LayoutWithLinks>
 
-<script>
-  const tooltipLinks = document.querySelectorAll('.tooltip-link');
-  const tooltipWidth = 256; //half of the tailwind width w-64
+<script is:inline>
+  function bindTooltipListeners() {
+    const tooltipLinks = document.querySelectorAll('.tooltip-link');
 
-  tooltipLinks.forEach((link, index) => {
-    const tooltip = document.getElementsByClassName('tooltip')[index] as HTMLElement; // Hole den jeweiligen Tooltip
+    tooltipLinks.forEach((link, index) => {
+      const tooltip = document.getElementsByClassName('tooltip')[index];
 
-    link.addEventListener('mousemove', (e: MouseEvent) => {
-      tooltip.classList.remove('hidden');
-      tooltip.style.visibility = 'hidden';
+      link.addEventListener('mousemove', (e) => {
+        tooltip.classList.remove('hidden');
+        tooltip.style.visibility = 'hidden';
 
-      const tooltipHeight = tooltip.offsetHeight;
+        const tooltipWidth = 256; //half of the tailwind width w-64
+        const tooltipHeight = tooltip.offsetHeight;
+        const x = e.pageX - tooltipWidth / 2;
+        const y = e.pageY - tooltipHeight - 20;
 
-      const x = e.pageX - tooltipWidth / 2;
-      const y = e.pageY - tooltipHeight - 20;
+        tooltip.style.left = `${x}px`;
+        tooltip.style.top = `${y}px`;
+        tooltip.style.visibility = 'visible';
+      });
 
-      tooltip.style.left = `${x}px`;
-      tooltip.style.top = `${y}px`;
-
-      tooltip.style.visibility = 'visible';
+      link.addEventListener('mouseleave', () => {
+        tooltip.classList.add('hidden');
+      });
     });
+  }
 
-    link.addEventListener('mouseleave', () => {
-      tooltip.classList.add('hidden');
-    });
-  });
+  bindTooltipListeners();
+
+  document.addEventListener('astro:after-swap', bindTooltipListeners);
+  document.addEventListener('astro:page-load', bindTooltipListeners);
 </script>
+
