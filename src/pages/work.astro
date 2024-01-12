@@ -65,7 +65,22 @@ const description = "A collecition of projects I have worked on in the past or a
     </div>
     <div class="space-y-2">
       <h3 class="font-bold">Micros</h3>
-      <p>Fun and interesting little projects. Not necessarily useful.</p>
+      <p class="pb-6">Fun and interesting little projects. Not necessarily useful.</p>
+      <div class="flex flex-col space-y-2 divide-divider-light dark:divide-divider-dark">
+        <div class="relative hover:text-hover-light dark:hover:text-hover-dark">
+          <a href="https://github.com/jandorn/ATTiny-Counter" class="flex justify-between tooltip-link">
+            <span>Freeform counter</span>
+            <span class="text-secondary-light dark:text-secondary-dark">creator</span>
+          </a>
+        </div>
+        <div class="tooltip hidden absolute text-sm py-2 px-3 bg-white text-[#67686D] rounded shadow w-64 opacity-95">
+          <p class="mb-2">
+            2020 I built a freeform circuit with a 4-digit 7-segment display that counts up when a button is pressed.
+            I built this as a christmas present for my dad to help him stop smoking. 1 day without smoking = 1 press of the button.
+            This project is powered by an ATTiny85. For more information, check out the GitHub repo.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </LayoutWithLinks>
