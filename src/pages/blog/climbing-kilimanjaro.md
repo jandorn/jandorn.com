@@ -65,7 +65,7 @@ Looking back, nearly every piece of equipment was essential, except for the bala
 
 With all the equipment finally sorted, the crew efficiently packed up the rest – tents, food, and other necessities for our journey. Everything was set for an early start the next morning. So, I spent one last night in the comfort of a warm, cozy bed at the hotel, mentally preparing myself for the adventure that lay ahead.
 
-#### Day 1 -  Embarking on the Machame Route Through the Rainforest
+#### Day 1
 
 There are a few different paths you can take to conquer Kilimanjaro, and I chose the Machame Route, opting for the 6-day journey. The trip to the starting point felt a bit like riding in a dala dala – those local, often crowded minibuses. We arrived at the Machame gate, situated at 1800 meters (5905 feet), where I grabbed some lunch and waited my turn to pass through the checkpoint.
 
@@ -77,7 +77,7 @@ Thankfully, the hike on the first day wasn't too challenging. I kept a good pace
 
 One thing to note is how early the sun sets around here – by 6 PM, it's dark. This took a bit of getting used to, but it also meant our days started and ended early. A rhythm of early nights and early mornings quickly became the norm.
 
-#### Day 2 - Rising with the Sun and Scaling New Heights
+#### Day 2
 
 I'm usually not an early riser, but something about this adventure made waking up to the sunrise an absolute delight. There's nothing quite like sipping on a warm cup of coffee after a good night's sleep in the great outdoors. Despite getting a solid eight hours, the night was pretty chilly, making me grateful for my warm sleeping bag.
 
@@ -93,7 +93,7 @@ And here's something that blew my mind – having mobile internet connection in 
 
 We capped off the day with a short 30-minute climb to a scenic spot, perfect for capturing some panoramic shots. What an amazing day it was!
 
-#### Day 3 - Rising to New Altitudes and Braving Nature's Extremes
+#### Day 3
 
 The cold was more intense this night, easily dipping into negative degrees. The frost blanketing the tent was proof enough. Waking up before sunrise to answer nature's call in such freezing conditions was... let's just say, not fun. It took a real mental push to get out of the cozy confines of my sleeping bag.
 
@@ -111,7 +111,7 @@ That feeling of relief lasted until the night when a ferocious storm hit. Its in
 
 And then, there was the stomach pain. Sharp, growing pains that had me up at 3 AM, scrambling to get dressed for a frantic trip to the camp toilet. The toilets in these camps are essentially cabins with a hole in the ground – not the most pleasant of places. Imagine squatting over this hole, a toilet paper in one hand and a torch in the other, questioning your life choices. And, as luck would have it, I had to make that trip not once but twice that night.
 
-#### Day 4 - The Longest Climb and the Eve of the Summit Push
+#### Day 4
 
 Let's just say the night was far from ideal, but I've had worse. Thanks to some Imodium, the stomach troubles were mostly at bay. So, we kicked off early again, right after breakfast, gearing up for what would be our longest day yet – a solid 8-hour climb.
 
@@ -129,7 +129,7 @@ As the evening crept in, so did my apprehensions. The mild pressure in my head e
 
 Anderson’s voice cut through the quiet of the night: "It's time." At 11:30 PM, I geared up, layering against the cold, and double-checked my essentials – snacks, water, medicine. Everything was in place. It was time for the final push, the moment of truth – the climb to the summit.
 
-#### Day 5 (Ascent) - The Grueling Midnight Trek to the Summit
+#### Day 5 (Ascent)
 
 Midnight struck, and it was time to leave the tent. Stepping out into the pitch-dark night, my headlamp cut a narrow path of visibility, but beyond a few meters, darkness engulfed everything. In that vast blackness, a string of lights from other climbers' headlamps snaked up the mountain path – a surreal, goosebump-inducing sight.
 
@@ -165,7 +165,7 @@ And then, there it was – the sign at Uhuru Peak, 5895 meters (19341 feet) abov
 
 ![Photo at the Famous Summit Sign](../../images/blog/kilimanjaro/summit.jpg)
 
-#### Day 5 (Descent) - A Swift Return through Changing Landscapes
+#### Day 5 (Descent)
 
 Having taken my triumphant photo at the summit sign, something inside me changed. It was as if reaching the top had flipped a switch, and I suddenly found myself filled with a surge of energy. Just 20 minutes earlier, I had been at my limit, but now, heading down, I felt like nothing could stop me.
 
@@ -177,7 +177,7 @@ As we approached Mweka Camp, the landscape morphed back into dense jungle. It fe
 
 I told my team that I planned to sleep as soon as possible and would likely skip dinner. They kindly prepared a meal anyway, just in case I woke up hungry. But that night, sleep was all I craved and managed, without waking for food.
 
-#### Day 6 - A Joyful Farewell and the Journey's End
+#### Day 6
 
 After a blissful 14-hour sleep, I woke up feeling like a new person – rejuvenated and bursting with energy. It was a welcome change after the physical and mental exertions of the previous days. But before wrapping up this incredible journey with a final 3-hour trek to Mweka Gate, there was one important event left – the tipping ceremony.
 
