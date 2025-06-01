@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Links from "@/components/Links.astro";
 import { Image } from "astro:assets";
+import ArrowLeft from "../icons/arrow-left.svg"
 
 import jLogo from "../images/logo_j.svg";
 
@@ -16,8 +17,11 @@ const { description } = Astro.props;
 
 <Layout title={title} description={description}>
   <div class="flex flex-col w-full sm:mt-[6rem] mt-[2rem] sm:flex-row">
-    <!-- mobile logo (only visible on small screens) -->
-    <div class="sm:hidden flex justify-center mb-8">
+    <!-- mobile logo and back button (only visible on small screens) -->
+    <div class="sm:hidden relative flex justify-center mb-8 px-8">
+      <a href="/" class="absolute left-8 flex items-center">
+        <ArrowLeft class="w-5 h-5" />
+      </a>
       <a href="/"><Image class="w-3" src={jLogo} alt="j logo" loading="eager" /></a>
     </div>
 
