@@ -2,6 +2,7 @@
 import Layout from "./Layout.astro";
 import Links from "../components/Links.astro";
 import { Image } from "astro:assets";
+import ArrowLeft from "../icons/arrow-left.svg"
 
 import jLogo from "../images/logo_j.svg";
 
@@ -22,6 +23,10 @@ function formatDate(dateString: string): string {
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
   <div class="relative flex w-full">
+    <!-- mobile arrow left (only visible on small screens) -->
+    <a href="/blog" class="md:hidden absolute top-[2rem] left-8 flex items-center">
+      <ArrowLeft class="w-5 h-5" />
+    </a>
     <!-- mobile logo (only visible on small screens) -->
     <div
       class="md:hidden absolute top-[2rem] left-1/2 transform -translate-x-1/2"
