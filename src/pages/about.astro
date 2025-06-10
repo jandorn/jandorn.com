@@ -5,12 +5,11 @@ import { Image } from "astro:assets";
 import headshot from "../images/jan.jpg";
 
 const title = "about";
-const description = "Hey there! I'm Jan Dorn - a tech enthusiast, student, and data nerd. Check out my projects, interests, and what I'm up to these days.";
+const description = "tech enthusiast, student, and data nerd. check out my projects, interests, and what I'm up to these days.";
 ---
 
 <LayoutWithLinks title={title} description={description}>
   <article class="prose prose-sm sm:prose text-primary-light dark:text-primary-dark text-justify max-w-xl">
-    <h4 class="dark:text-primary-dark">Hi, I'm Jan 👋</h4>
     <p>
       I love working on various hardware and software projects.
       Currently, I'm a graduate student in Information Systems at the
@@ -20,12 +19,12 @@ const description = "Hey there! I'm Jan Dorn - a tech enthusiast, student, and d
     </p>
 
     <Image
-      class="w-40 mx-auto rounded-full"
+      class="w-32 mx-auto rounded-full"
       src={headshot}
       alt="a portrait of me"
       loading="eager"
     />
-    <div class="mt-8 not-prose">
+    <div class="mt-2 not-prose">
       <Socials />
     </div>
 
